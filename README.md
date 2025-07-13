@@ -121,6 +121,7 @@ EchoMind listens to user audio, transcribes it into text using OpenAI's Whisper 
 ### Backend Setup
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 ### Frontend Setup
 cd frontend
