@@ -1,0 +1,117 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .App-header {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .App-header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  .mic-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .mic-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+  
+  .mic-button.recording {
+    background-color: #f44336;
+    animation: pulse 1s infinite;
+  }
+  
+  .mic-button.processing {
+    background-color: #ff9800;
+    cursor: not-allowed;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .error {
+    color: #f44336;
+    background-color: rgba(244, 67, 54, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #f44336;
+  }
+  
+  .results {
+    margin-top: 30px;
+  }
+  
+  .transcript-display {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .transcript {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #61dafb;
+    margin: 10px 0;
+  }
+  
+  .analysis {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .response-player {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .response-text {
+    font-size: 1.1rem;
+    color: #90EE90;
+    margin: 10px 0;
+  }
+  
+  .audio-player {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  h3 {
+    color: #61dafb;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    color: #ffd700;
+    margin-bottom: 5px;
+  }
